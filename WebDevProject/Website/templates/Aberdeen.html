@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/Aberdeen.css">
+        <script src="../static/Header.js" defer></script>
+        <title>World Hotels</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-name">WH | World Hotels</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    {% if email%}
+                    <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="/Login">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header" id="home">
+            <div class="section__container header__container">
+              <p class="section__subheader">ABERDEEN</p>
+              <h1>The Perfect<br/>Base For You</h1>
+              <button class="btn">Take A Tour</button>
+            </div>
+          </header>
+      
+          <div class="booking">
+            <div class="section__container booking__container">
+              <form action="/">
+                <div class="input__group">
+                  <label for="arrival" id="arrival">Arrival Date</label>
+                  <input type="text" placeholder="Your Arrival Date" />
+                </div>
+                <div class="input__group">
+                  <label for="departure" id="departure">Departure Date</label>
+                  <input type="text" placeholder="Your Departure Date" />
+                </div>
+                <div class="input__group">
+                  <label for="guests" id="guests">Guests</label>
+                  <input type="text" placeholder="No Of Guests" />
+                </div>
+                <ul>
+                  <li><a href="/booking">Check Availability</a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="useful-links">
+            <div class="col-4 col-m-4">
+                <div class="LinksHeader">
+                    <h2>Useful Links</h2>
+                </div>
+                <ul>
+                    <li><a href="https://aboutaberdeen.com/">Aberdeen Guide</a></li>
+                    <li><a href="https://www.aberdeencity.gov.uk/services/roads-transport-and-parking/public-transport">Public Transport</a></li>
+                    <li><a href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/15-must-visit-attractions-in-aberdeen#:~:text=15%20Must-Visit%20Attractions%20in%20Aberdeen%201%20St%20Machar%E2%80%99s,Greyfriar%E2%80%99s%20Church%20and%20Marischal%20College%20...%20More%20items">Landmarks</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+            <div class="info">
+                <div class="col-8 col-m-8">
+                    <h4>About Aberdeen</h4>
+                    <p>We are Scotland's third largest city and is known fondly as The Granite City due to the local pale stone which adorns so many of its outstanding buildings. It is also nicknamed the oil capital of Europe, the Dallas of Britain and the silver city with the golden sands. Another nickname is Furry Boot Town after the Doric phrase Furry Boot Ye Frae!
+                        A visit would not be complete without a walk through Old Aberdeen to see some picturesque and olden examples architecture in some of Scotland's oldest buildings such as Provost Skene's House. Examples of traditional fishing cottages can still be seen at nearby Footdee by the beach. 
+                    </p>
+                </div>
+            </div>
+
+
+
+    </body>
+</html>

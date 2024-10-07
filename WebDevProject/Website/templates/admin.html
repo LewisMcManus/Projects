@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/admin.css">
+        <script src="../static/Header.js" defer></script>
+        <title>World Hotels</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-name">WH | World Hotels</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    {% if AccountType == Admin %}
+                    <li><a href="">Admin</a></li>
+                    {% elif AccountType == Member %}
+                    <li><a href="">About</a></li>
+                    {% endif %}
+                    {% if email%}
+                    <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="/Login">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <h1>Welcome to the admin and database management tab</h1>
+        </body>

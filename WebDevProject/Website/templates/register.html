@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../static/Sign-Up.css">
+  <title>Sign Up Sheet</title>
+</head>
+<body>
+  <div class="center">
+    <h1>Sign Up</h1>
+    <form method="post" action="/register">
+      <div class="txt_field">
+        <input type="email" name="email" id="email" required>
+        <span></span>
+        <label>Email</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" name="password" id="password" required>
+        <label>Password</label>
+        <span></span>
+      </div>
+      <div class="txt_field">
+        <input type="password" name="password" id="confirmpassword" required>
+        <label>Confirm Password</label>
+        <span></span>
+      </div>
+      <input type="submit" value="Confirm">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/HomePageV2.css">
+        <script src="../static/Header.js" defer></script>
+        <title>World Hotels</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-name">WH | World Hotels</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    {% if AccountType == Admin %}
+                    <li><a href="/admin">Admin</a></li>
+                    {% elif AccountType == Member %}
+                    <li><a href="">About</a></li>
+                    {% endif %}
+                    {% if email%}
+                    <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="/Login">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <div class="locations">
+            <div class="col-5 col-m-6">
+                <div class="LocationsHeader">
+                    <h2>Our Locations</h2>
+                </div>
+                <ul>
+                    <li><a href="/Aberdeen">Aberdeen</a></li>
+                    <li><a href="/Belfast">Belfast</a></li>
+                    <li><a href="/Birmingham">Birmingham</a></li>
+                    <li><a href="/Bristol">Bristol</a></li>
+                    <li><a href="#">Cardiff</a></li>
+                    <li><a href="#">Edinburgh</a></li>
+                    <li><a href="#">Glasgow</a></li>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Manchester</a></li>
+                    <li><a href="#">Newcastle</a></li>
+                    <li><a href="#">Norwich</a></li>
+                    <li><a href="#">Nottingham</a></li>
+                    <li><a href="#">Oxford</a></li>
+                    <li><a href="#">Plymouth</a></li>
+                    <li><a href="#">Swansea</a></li>
+                    <li><a href="#">Bornemouth</a></li>
+                    <li><a href="#">Kent</a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
+        <div class="info">
+            <div class="col-7 col-m-6">
+                <p>It’s going to be a great night. Now book yourself a great hotel, with World Hotels. Find top hotel deals for all occasions. Tonight, or any night.</p>
+                <p>Compare and book hotels online at great low prices. You’ll find some of the cheapest deals available on everything from luxury to budget hotels to exclusive resorts. Whether you are looking for a city centre hotel, a romantic weekend break, UK staycation or a b&b in Bornemouth we have the right deals for you.</p>
+                <p>Want to getaway this weekend? Then check out our last minute deals. We work with booking.com to bring you the best deals possible at unbeatable last minute rates.</p>
+                <p>World Hotels have hundreds of thousands of hotels and bed and breakfasts listed on our website from London hotels to hotels in Manchester, Glasgow, Belfast and beyond, so wherever you want to go you are guaranteed to find the perfect deal. From cheap hotels to lastminute deals and late bookings we've got you covered.</p>
+            </div>
+        </div>
+        </section>
+    <div class="facilities">
+        <div class="col-5 col-m-5">
+        <div class="facilities-1">
+            <h4>High Ratings</h4>
+            <p>We take pride in ensuring that all our hotels consistently recieve high ratings and positive reviews</p>
+        </div>
+
+        <div class="facilities-2">
+            <h4>Quiet Hours</h4>
+            <p>Our hotels have quiet hours as wek know that peace and uninterrupted rest are essental for rejuvenating</p>
+        </div>
+
+        <div class="facilities-3">
+            <h4>Best Locations</h4>
+            <p>All of our hotels are in extremely sought after locations so that you'll be right in the middle of the action</p>
+        </div>
+
+        <div class="facilities-4">
+            <h4>Free Cancellations</h4>
+            <p>We understand that travel plans can change on a swivel which is why we offer free cancellations up to a week before your time</p>
+        </div>
+
+        <div class="facilities-5">
+            <h4>Payment Options</h4>
+            <p>Our website offers a wide range of convenient payment options to suit your preferences</p>
+        </div>
+
+        <div class="facilities-6">
+            <h4>Special Offers</h4>
+            <p>Whether you're planning a romantic getaway, or a business trip, keep an eye out on all of our curated special offers for your needs</p>
+        </div>
+        </div>
+    </div>
+        <div class="footer">
+            <p></p>
+        </div>
+
+    </body>
+</html>

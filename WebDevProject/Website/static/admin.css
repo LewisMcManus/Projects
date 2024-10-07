@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -200px;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.Booking-Map {
+  border-color: #0E2C40;
+  border-width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E2C40;
+  color: white;
+  flex-direction: column;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.navbar-links li:hover {
+  background-color: #6189FD;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+  display: flex;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.Booking-Map {
+  position: absolute;
+  left: 33.333%;
+  top: 100px;
+}
+
+.locations {
+  text-align: center;
+}
+
+.locations ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.locations li {
+  padding: 6px;
+  margin-bottom: 8px;
+  background-color: #0E2C40;
+  text-decoration: none;
+}
+
+.locations li:hover {
+  background-color: #6189FD;
+}
+
+.locations a {
+  text-decoration: none;
+  color: white;
+}
+
+.LocationsHeader {
+  padding: 6px;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+}
+
+.info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding-top: 55px;
+  font: bold;
+  word-spacing: 3px;
+  height: 50%;
+  color: #0E2C40;
+}
+
+.facilities-1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+.facilities-icons {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: #0E2C40;
+}
+
+.facilities-2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+.facilities-3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+.facilities-4 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+.facilities-5 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+.facilities-6 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding-top: 10px;
+  color: #0E2C40;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  .navbar, .navbar-links ul {flex-direction: row;}
+
+  .navbar-links {display: flex; width: auto;}
+
+  .toggle-button {display: none;}
+
+  .info {font-size: 1.2rem;}
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .navbar, .navbar-links ul {flex-direction: row;}
+
+  .navbar-links {display: flex; width: auto;}
+
+  .toggle-button {display: none;}
+
+  .navbar-links li {font-size: 1.6rem;}
+
+  .brand-name {font-size: 1.6rem;}
+
+  .info {font-size: 1.5rem; word-spacing: 10px;}
+
+}

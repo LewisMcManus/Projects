@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/booking.css">
+        <script src="../static/Header.js" defer></script>
+        <title>World Hotels</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-name">WH | World Hotels</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    {% if email%}
+                    <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="/Login">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header" id="home">
+            <div class="section__container header__container">
+              <p class="section__subheader">ABERDEEN</p>
+              <ul>
+                <li><a href="/BookingSuccess">Book Now And Pay</a></li>
+              </ul>
+            </div>
+          </header>
+      
+
+            <div class="info">
+                <div class="col-8 col-m-8">
+                    <h3>Good News! There is a room available</h3>
+                    <p>
+                        You have selected 3 guests with an arrival date of 10/08/2024 and a departure date of 13/08/2024 which will total £1260, please press "Book Now And Pay" to continue 
+                    </p>
+                </div>
+            </div>
+
+
+
+    </body>
+</html>
